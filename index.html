@@ -1,11 +1,59 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BINGO</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
 </head>
 <body>
+<div class="container-home">
+    <h1><b>BINGO</b></h1>
+    <form>
+        <label for="player1">Jugador 1:</label><b></b>
+        <input type="text" id="player1" placeholder="nombre de usuario 1" required>
+        <br><br>
+        
+        <label for="player2">Jugador 2:</label><b></b>
+        <input type="text" id="player2" placeholder="nombre de usuario 2" required>
+        <br><br>
+        
+        <label for="player3">Jugador 3:</label><b></b>
+        <input type="text" id="player3" placeholder="nombre de usuario 3" required>
+        <br><br>
+        
+        <label for="player4">Jugador 4:</label><b></b>
+        <input type="text" id="player4" placeholder="nombre de usuario 4" required>
+        <br><br>
+        
+        <label for = "Tamaño del carton">Tamaño del carton </label><b></b>
+        <!-- <select id = "tamaño_carton">
+            <option value="Value 1">3x3</option>
+            <option value="Value 2">4x4</option>
+            <option value="Value 3">5x5</option>
+            </option> -->
+
+            <select id="selectTamanoBingo" >
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+              </select >
+              
+              
+        </select><br><br>
+    </form>
+
+    <button type="button" onclick="startGame()">Iniciar Juego</button>
+</div>
+
+<script src= "./main.js"></script>
+    
     
 </body>
 </html>
