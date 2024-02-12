@@ -1,0 +1,35 @@
+/* home */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.milenio.com/o9YgV3R7kQK0XpcdT_KH1TstTZo=/942x532/uploads/media/2022/06/18/bingo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.container-home{
+
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  
+  @media (min-width: 1024px) {
+  }
+
+  form {
+    font-weight: bolder;
+  }
+
+  button{
+    font-weight: bolder;
+    
+  }

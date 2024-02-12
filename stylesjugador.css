@@ -1,0 +1,44 @@
+
+body {
+  background-color: #27c8c8;
+}
+
+table {
+  border: #b2b2b2 10px solid;
+  border-spacing: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 400px;
+  height: 400px;
+  background-color:white;
+}
+td, th {
+  border: black 2.5px solid;
+}
+
+.selected {
+  background-color: red;
+  color: white;
+  border: 1px solid;
+  border-radius: 300%;
+  text-align: center;
+}
+
+.unselected {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+#botonSacar{
+  float: right;
+  background-color:rgb(36, 36, 143);
+  color: white;
+ 
+}
+
+#Sorteo{
+  float: right;
+  padding-right: 20px;
+}
