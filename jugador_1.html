@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugador 1</title>
+    <link rel="stylesheet" href="stylesjugador.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <input type="hidden" id="playername1" />
+    <input type="hidden" id="playername2" />
+    <input type="hidden" id="playername3" />
+    <input type="hidden" id="playername4" />
+    <div id = "ParteSuperior">
+        <label><b>Jugadores<b> </label>
+    
+    
+        <select id="players" onchange="mostrarInfoPlayer()">        
+        </select>
+
+        
+        <div>
+            <div><button id="botonSacar" onclick = 'SacarnumeroAleatorio()' >Sacar número</button></div>
+            <div id="Sorteo" ></div><br>
+        </div>
+        
+
+        <label id="Contador" > Turnos: </label><div id="turnos"></div>
+
+        <label>Score:</label> 
+        <div id = "puntajejugador"></div>
+
+
+    
+    
+    <input type="hidden" id="htamano" />
+    
+    <div id="bingo"></div>
+
+
+    </div>
+
+    <div id = "ParteFinal" style="display: none;">
+        <button type="button" onclick="SalirJuego()">Salir Juego</button>
+
+        <h3>Tabla de victorias</h3>
+        <div id="tablaVictorias">
+       
+        </div>
+
+    </div>
+        
+    <script src= "./main.js"></script>
+    <script> 
+    
+        const params = new URLSearchParams(window.location.search);
+    
+        const tamano = params.get("tamano");
+        document.getElementById('htamano').value = tamano;
+        
+        Agregarjugadores();
+        crearcartones();
+        mostrarcarton();
+    </script>
+</body>
+</html>
